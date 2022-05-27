@@ -27,6 +27,7 @@ func main() {
 	dsn := "root:@tcp(127.0.0.1:3306)/17220294?charset=utf8mb4&parseTime=True&loc=Local"
 	db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 
+	// di test ini
 	if err != nil {
 		fmt.Println("koneksi gagal")
 	} else {
